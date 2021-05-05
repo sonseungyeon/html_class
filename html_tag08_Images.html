@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images</title>
+</head>
+<body>
+    <h1>Image 태그</h1>
+    
+    <hr>
+    네이버 로고 이미지를 캡쳐해와서
+    네이버 로고 이미지를 화면에 보여주고, 클릭시 네이버 사이트로 이동하도록 만들어보세요
+    
+    <a href = "https://www.naver.com" target = "_blank"><img src = "images/naverlogo.jpg" title = "Images"></a>
+    
+    <hr>
+    
+    <img src = "images/naver_map_logo.png" usemap = "#naver_map" alt = "네이버 로고 화면">
+    <map name = "naver_map">
+         <!--coords : 왼쪽위(x,y), 오른쪽아래(x,y)-->
+        <area shape = "rect" coords = "4,40,228,93" href="https://www.naver.com" alt="">
+    </map>
+
+
+    <figure>
+        <img src = "images/imgmap_test.jpg" usemap = "#img_map" alt="다각형 화면">
+        <figcaption>도형들!!</figcaption>
+    </figure>
+    <map name = "img_map">
+        <area shape = "circle" coords = "653,192,123" href="https://www.google.com" alt="구글" title = "구글">
+        <area shape = "rect" coords = "589,384,968,472" href="https://www.daum.net" alt="다음" title = "다음">
+        <area shape = "poly" coords = "141,61,363,107,413,224,336,376,114,335,67,216" href="https://www.naver.com" alt="네이버" title = "네이버">
+    </map>
+</body>
+</html>

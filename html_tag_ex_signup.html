@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
+</head>
+<body>
+    <h1>로그인</h1>
+    <form action="html_tag_ex_signup.html" method="post">
+        <fieldset>
+            <legend>로그인</legend>
+            <input type="text"placeholder="아이디를 입력하세요" name="userId"><br>
+            <input type="password"placeholder="비밀번호를 입력하세요" name="password"><br>
+            <input type="submit" value="로그인">
+            <input type="reset" value="초기화">
+        </fieldset>
+    </form>
+    <h1>회원가입</h1>
+    <form action="html_tag_ex_signup.html" method="post">
+        <fieldset>
+            <legend>회원가입</legend>
+            <fieldset>
+            <legend>사용자 정보 입력</legend>
+                이름 : <input type="text"placeholder="이름을 입력하세요" name="name"><br>
+                아이디 : <input type="text"placeholder="아이디를 입력하세요" name="userId"><br>
+                이메일 : <input type="email"placeholder="이메일을 입력하세요" name="email"><br>
+                비밀번호 : <input type="password"placeholder="비밀번호를 입력하세요" name="password"><br>
+                전화번호 : <input type="tel" placeholder="전화번호를 입력하세요" name="tel"><br>
+            </fieldset>
+            <fieldset>
+                <legend>기타 정보 입력</legend>
+                생일<br><label><input type="date" name="birthDate" value="생일"></label><br>
+                <legend>성별</legend>
+                <label><input type="radio" name="sex" value="man">남자</label>
+                <label><input type="radio" name="sex" value="woman">여자</label>
+            </fieldset>
+            <fieldset>
+                <legend>장르 선택</legend>
+                <label><input type="checkbox" name="genre" value="로맨스">로맨스</label>
+                <label><input type="checkbox" name="genre" value="코미디">코미디</label>
+                <label><input type="checkbox" name="genre" value="스릴러">스릴러</label>
+                <label><input type="checkbox" name="genre" value="드라마">드라마</label>
+                <label><input type="checkbox" name="genre" value="액션">액션</label>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="회원가입">
+                <input type="reset" value="초기화">
+            </fieldset>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
