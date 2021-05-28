@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>write.html</title>
+<style>
+    h1{text-align: center;}
+    div{margin: 0 auto;}
+    fieldset{display:table;
+        margin:auto;width: 600px;
+        text-align: center;}
+</style>
+</head>
+<body>
+    <h1>방명록 작성</h1>
+    <form action="">
+        <fieldset>
+            <legend>방명록 작성</legend>
+                <div>
+                    <label for="name">작성자 : </label><input type="text" name="name" id="name" placeholder="이름을 입력하세요"><br>
+                    <label for="write_data">내용 : </label><textarea name="write_data" id="write_data" cols="30" rows="10" placeholder="내용을 입력하세요"></textarea>
+                </div>
+                <input type="submit" value="방명록 남기기">
+        </fieldset>
+    </form>
+</body>
+</html>
