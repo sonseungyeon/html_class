@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        table{border: 1px solid gray;
+        border-collapse: collapse;
+        width:1000px;
+        margin: auto;}
+        .labelTextRow{border: 1px solid gray;
+        border-left: none;
+        border-right: none;}
+        .textRow{padding: 5px;}
+        .label{padding-left:5px;background: rgb(228, 243, 248);width:200px;}
+        .rowTitle{padding-left:5px;color:white;background: rgb(132, 173, 189);}
+        .div{margin:5px;}
+    </style>
+</head>
+<body>
+    <div class="div"><img src="images/ic_arrow_a.gif" alt=""><b>사항은 필수 입력 사항이므로 필히 입력하여 주십시오.</b></div>
+    
+    <form name="form">
+        <table>
+            <tr>
+                <td class="rowTitle" colspan="5">
+                    <b>기본정보</b>
+                </td>
+            </tr>
+            <tr>
+                <td class="label labelTextRow">
+                    <img src="project2_images/ic_arrow_a.gif" alt="">
+                    <label for="id">회원 ID</label>
+                </td>
+                <td class="textRow labelTextRow" colspan="4">
+                    <input type="text" name="id" id="id">
+                    <span id="idSpanTag"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label labelTextRow">
+                    <img src="project2_images/ic_arrow_b.gif" alt="">
+                    <label for="uploadFile">프로필 사진</label>
+                </td>
+                <td class="textRow labelTextRow" colspan="4">
+                    <input type="file" name="uploadFile" id="uploadFile">
+                </td>
+            </tr>    
+            <tr>
+                <td class="label labelTextRow">
+                    <img src="project2_images/ic_arrow_a.gif" alt="">
+                    <label for="password">비밀번호</label>
+                </td>
+                <td class="textRow labelTextRow" colspan="4">
+                    <input type="password" name="password" id="password">
+                    <span id="passwordSpanTag"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label labelTextRow">
+                    <img src="project2_images/ic_arrow_a.gif" alt="">
+                    <label for="reEnterPassword">비밀번호 재입력</label>
+                </td>    
+                <td class="textRow labelTextRow" colspan="4">
+                    <input type="reEnterPassword" name="reEnterPassword" id="reEnterPassword">
+                    <span id="passwordReEnterSpanTag"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label labelTextRow">
+                    <img src="project2_images/ic_arrow_b.gif" alt="">
+                    <label for="hint">비밀번호 힌트</label>
+                </td>    
+                <td class="textRow labelTextRow" colspan="4">
+                    <input type="text" name="hint" id="hint"size=55>
+                </td>
+            </tr>
+            <tr>
+                <td class="label labelTextRow">
+                    <img src="project2_images/ic_arrow_b.gif" alt="">
+                    <label for="friendId">추천해준 친구 ID</label>
+                </td>    
+                <td class="textRow labelTextRow" colspan="4">
+                    <input type="text" name="friendId" id="friendId">
+                </td>
+            </tr>
+            <tr>
+                <td class="label labelTextRow">
+                    <img src="project2_images/ic_arrow_a.gif" alt="">
+                    <label for="name">이름<label>
+                    </td>    
+                    <td class="textRow labelTextRow" colspan="4">
+                    <input type="text" name="name" id="name">
+                    <span id="nameSpanTag"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label labelTextRow">
+                    <img src="project2_images/ic_arrow_a.gif" alt="">
+                    <label for="email">이메일</label>
+                </td>    
+                <td class="textRow labelTextRow" colspan="4">
+                    <input type="email" name="email" id="email">
+                    <span id="emailSpanTag"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label labelTextRow">
+                    <img src="project2_images/ic_arrow_a.gif" alt="">
+                    <label for="rrn">주민등록번호</label>
+                </td>    
+                <td class="textRow labelTextRow" colspan="4">
+                    <input type="text" name="rrn" id="rrn">-<input type="text" name="rrn2" id="rrn2">
+                    <span id="rrnSpanTag"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label labelTextRow">
+                    <img src="project2_images/ic_arrow_b.gif" alt="">
+                    <label for="birthday">생년월일</label>
+                </td>    
+                <td class="textRow labelTextRow" colspan="4">
+                    <input type="date" name="birthday" id="birthday">
+                </td>
+            </tr>
+            <tr>
+                <td class="label labelTextRow">
+                    <img src="project2_images/ic_arrow_b.gif" alt="">
+                    <label for="postalCode">우편번호</label>
+                </td>    
+                <td class="textRow labelTextRow" colspan="4">
+                    <input type="text" name="postalCode" id="postalCode"size=7>-<input type="text" name="postalCode2" id="postalCode2"size=7>
+                </td>
+            </tr>
+            <tr>
+                <td class="label labelTextRow">
+                    <img src="project2_images/ic_arrow_b.gif" alt="">
+                    <label for="address">주소1</label>
+                </td>    
+                <td class="textRow labelTextRow" colspan="4">
+                    <input type="text" name="address" id="address" size="65">
+                </td>
+            </tr>
+            <tr>
+                <td class="label labelTextRow">
+                    <img src="project2_images/ic_arrow_b.gif" alt="">
+                    <label for="address2">주소2</label>
+                </td>    
+                <td class="textRow labelTextRow" colspan="4">
+                    <input type="text" name="address2" id="address2" size="65">
+                </td>
+            </tr>
+            <tr>
+                <td class="label labelTextRow">
+                    <img src="project2_images/ic_arrow_b.gif" alt="">
+                    <label for="phoneNumber">전화</label>
+                </td>    
+                <td class="textRow labelTextRow" colspan="4">
+                    <input type="text" name="phoneNumber" id="phoneNumber">
+                </td>
+            </tr>
+            <tr>
+                <td class="rowTitle labelTextRow" colspan="5">
+                    <b>관심분야</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="VisualBasic">
+                    <label for="VisualBasic">VisualBasic</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="C">
+                    <label for="C">C</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Java">
+                    <label for="Java">Java</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="ASP">
+                    <label for="ASP">ASP</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="PHP">
+                    <label for="PHP">PHP</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="XML">
+                    <label for="XML">XML</label>
+                <td>
+                    <input type="checkbox" id="Javascript">
+                    <label for="Javascript">Javascript</label>
+                <td>
+                    <input type="checkbox" id="HTML">
+                    <label for="HTML">HTML</label>
+                <td>
+                    <input type="checkbox" id="Dreamweaver">
+                    <label for="Dreamweaver">Dreamweaver</label>
+                <td>
+                    <input type="checkbox" id="정보처리기사">
+                    <label for="정보처리기사">정보처리기사</label>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Linux">
+                    <label for="Linux">Linux</label>
+                <td>
+                    <input type="checkbox" id="Unix">
+                    <label for="Unix">Unix</label>
+                <td>
+                    <input type="checkbox" id="Windows2000">
+                    <label for="Windows2000">Windows2000</label>
+                <td>
+                    <input type="checkbox" id="Oracle">
+                    <label for="Oracle">Oracle</label>
+                <td>
+                    <input type="checkbox" id="MS-SQL">
+                    <label for="MS-SQL">MS-SQL</label>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="MySQLc">
+                    <label for="MySQLc">MySQLc</label>
+                <td>
+                    <input type="checkbox" id="DB모델링">
+                    <label for="DB모델링">DB모델링</label>
+                <td>
+                    <input type="checkbox" id="MCP">
+                    <label for="MCP">MCP</label>
+                <td>
+                    <input type="checkbox" id="OCP">
+                    <label for="OCP">OCP</label>
+                <td>
+                    <input type="checkbox" id="SCJP">
+                    <label for="SCJP">SCJP</label>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <div align=center>
+        <input type="button" onclick="checkFunction()" value="확인"></button>
+        <button type="reset">다시쓰기</button>
+    </div>
+    <script>
+        var id = document.querySelector('input[name="id"]');
+        var password = document.querySelector('input[name="password"]');
+        var reEnterPassword = document.querySelector('input[name="reEnterPassword"]');
+        var nameValue = document.querySelector('input[name="name"]');
+
+        var email = document.querySelector('input[name="email"]');
+        var emailPattern = /.+@*.+.*.+/;
+        var idSpanAdd = document.querySelector("#idSpanTag");
+        var passwordSpanAdd = document.querySelector("#passwordSpanTag");
+        var passwordReEnterSpanAdd = document.querySelector("#passwordReEnterSpanTag");
+        var nameSpanAdd = document.querySelector("#nameSpanTag");
+        var emailSpanAdd = document.querySelector("#emailSpanTag");
+        var rrnSpanAdd = document.querySelector("#rrnSpanTag");
+
+        var checkboxAll = document.querySelectorAll('input[type="checkbox"]');
+        var checkboxCheck = [];
+        var checkCount = 0;
+
+        function checkFunction() {
+            idSpanAdd.innerText = "";
+            passwordSpanAdd.innerText = "";
+            passwordReEnterSpanAdd.innerText = "";
+            nameSpanAdd.innerText = "";
+            emailSpanAdd.innerText = "";
+            rrnSpanAdd.innerText = "";
+
+            var idTrim = id.value.trim();
+            var passwordTrim = password.value.trim();
+            var reEnterPasswordTrim = reEnterPassword.value.trim();
+            var nameValueTrim = nameValue.value.trim();
+            var emailTrim = email.value.trim();
+
+            //id 5자 이상
+            if (idTrim.length == 0) {
+                idSpanAdd.innerText = "아이디가 빈값입니다. 다시 입력해주세요";
+                return false;
+            }
+
+            if (idTrim.length < 5) {
+                idSpanAdd.innerText = "아이디를 다시 입력해주세요";
+                return false;
+            }
+
+            //password 10자 이상
+            if (passwordTrim.length == 0) {
+                passwordSpanAdd.innerText = "비밀번호가 빈값입니다. 다시 입력해주세요";
+                return false;
+            }
+            
+            if (passwordTrim.length < 10) {
+                passwordSpanAdd.innerText = "비밀번호를 다시 입력해주세요";
+                return false;
+            }
+
+            if (reEnterPasswordTrim.length ==0) {
+                passwordReEnterSpanAdd.innerText = "비밀번호 재입력이 빈값입니다. 다시 입력해주세요";
+                return false;
+            }
+
+            if (!(reEnterPasswordTrim == passwordTrim)) {
+                passwordReEnterSpanAdd.innerText = "비밀번호가 다릅니다";
+                return false;
+            }
+
+            if (nameValueTrim.length <= 0) {
+                nameSpanAdd.innerText = "이름을 입력하세요";
+                return false;
+            }
+
+            if (emailTrim == "") {
+                emailSpanAdd.innerText = "이메일을 입력하세요";
+                return false;
+
+            } else if (!emailPattern.test(emailTrim)) {
+                emailSpanAdd.innerText = "이메일형식이 아닙니다";
+                return false;
+            }
+
+            var rrn = document.querySelector('input[name="rrn"]');
+            var rrn2 = document.querySelector('input[name="rrn2"]');
+
+            var rrnArr = String(rrn.value).split("");
+            var rrnArr2 = String(rrn2.value).split("");
+            var rrnArrHap = [];
+            for (var i = 0; i < rrnArr.length; i++) {
+                rrnArrHap.push(rrnArr[i]);
+            }
+            for (var i = 0; i < rrnArr2.length; i++) {
+                rrnArrHap.push(rrnArr2[i]);
+            }
+            var mulNum = [2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5];
+            var mulValue = 0;
+
+            for (var i = 0; i < rrnArrHap.length - 1; i++) {
+                mulValue += rrnArrHap[i] * mulNum[i];
+            }
+
+            var divValue = mulValue % 11;
+            var subValue = 11 - divValue;
+
+            var oneDigit = subValue;
+
+            if (oneDigit == rrnArrHap[12]) {
+
+            } else {
+                rrnSpanAdd.innerText = "정상적인 주민번호값을 입력하세요";
+            }
+
+            var checkCount = 0;
+            for (var i = 0; i < checkboxAll.length; i++) {
+                if (checkboxAll[i].checked == true) {
+                    checkCount++;
+                }
+            }
+
+            if (checkCount < 1) {
+                alert("체크박스는 최소 하나를 체크해야 합니다");
+                return false;
+            }
+
+            if((checkCount>1) || (oneDigit == rrnArrHap[12]) || emailPattern.test(emailTrim)
+            || (nameValueTrim.length > 0) || (reEnterPasswordTrim == passwordTrim) || (passwordTrim.length >= 8) || (idTrim.length >= 5)){
+                alert("회원가입 완료입니다");
+            }
+        }
+
+    </script>
+</body>
+</html>

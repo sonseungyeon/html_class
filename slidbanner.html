@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>롤링 슬라이드 배너</title>
+    <style>
+        *{margin:0;padding:0; text-decoration:none;list-style:none;}
+        h1{text-align:center;}
+        .container{margin: 0 auto;
+            width:calc(250px * 3);
+            height:200px;
+            overflow:hidden;
+            position:relative;}
+        .containerParent{margin : auto;
+            margin-top: 80px;
+            padding:25px;
+            width: 750px;
+            border: 1px solid gray;}
+        .container>ul{width:calc(250px*11);
+            margin-left:-250px;}
+        .container>ul::after{content:"";
+        clear:both;
+        display:block}
+        .container li{float:left;}
+    </style>
+    <script>
+        $(function(){
+            $(".containerParent>img").last().click(function(){
+                $(".container>ul").animate(
+                    {"margin-left":"-500px"},
+                    1000,
+
+                    function(){
+                        $(".container>ul").css("margin-left","-250px");
+                        $(".container>ul").append($(this).children().eq(0));
+                    });
+            });
+            $(".containerParent>img").first().click(function(){
+                $(".container>ul").animate(
+                    {"margin-left":"0px"},
+                    1000,
+                    
+                    function(){
+                        $(".container>ul").css("margin-left","-250px");
+                        $(".container>ul").prepend($(".container>ul").children().eq(10));
+                        
+                    });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>롤링 슬라이드 배너</h1>
+    <hr>
+    <div class="containerParent">    
+        <div class="container">
+            <ul>
+                <li><img src="images/chocolate1.jpg"></li>
+                <li><img src="images/chocolate2.jpg"></li>
+                <li><img src="images/chocolate3.jpg"></li>
+                <li><img src="images/chocolate4.jpg"></li>
+                <li><img src="images/chocolate5.jpg"></li>
+                <li><img src="images/chocolate6.jpg"></li>
+                <li><img src="images/chocolate7.jpg"></li>
+                <li><img src="images/chocolate8.jpg"></li>
+                <li><img src="images/chocolate9.jpg"></li>
+                <li><img src="images/chocolate10.jpg"></li>
+                <li><img src="images/chocolate11.jpg"></li>
+            </ul>
+            
+        </div>
+        <img src="project_images/prev_btn.png">
+        <span>이동하기</span>
+        <img src="project_images/next_btn.png">
+    </div>
+</body>
+</html>
